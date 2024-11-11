@@ -1,0 +1,40 @@
+#map {
+    height: 400px;
+    width: 400px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+canvas, #puzzleContainer, #shuffledPuzzle {
+    border: 1px solid #000;
+    margin: 1px;
+}
+
+#puzzleContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px;
+}
+
+.puzzle-cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.puzzle-piece.locked {
+    cursor: not-allowed;
+}
